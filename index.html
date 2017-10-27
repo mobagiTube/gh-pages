@@ -8,37 +8,57 @@
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>HTML5 videoタグ</title>
+
+<style type="text/css">
+        #span_style1 {
+            display: inline-block;
+            background-color: Black;
+            height: 360px;
+            width: 640px;
+        }
+	#span_style2 {
+            display: inline-block;
+            background-color: Black;
+            height: 480px;
+            width: 640px;
+        }
+</style>
 </head>
 
 <body bgcolor="#e6e6fa">
-<span style="font-size: x-large">HTML5 videoタグ</span>
+	<span style="font-size: x-large">HTML5 videoタグ</span>
 
-<hr>
+	<hr>
 
-<div>MP4(HTTPS) 1920x1080 ビットレート8021kbps 23.97fps<br />
-<video src="https://www.videvo.net/videvo_files/converted/2014_12/videos/Raindrops_Videvo.mp485639.mp4" controls="controls" width="640" height="360" muted preload="none">
-</video><br />
-</div>
+	<div >MP4(HTTPS) 1920x1080 ビットレート8021kbps 23.97fps<br />
+		<span id="span_style1">
+			<video src="https://www.videvo.net/videvo_files/converted/2014_12/videos/Raindrops_Videvo.mp485639.mp4" controls="controls" width="640" height="360" muted preload="none" />
+		</span>
+	</div>
 
-<div>MP4(HTTP) 320x240 ビットレート1987kbps 30fps<br />
-<video src="http://www.gomplayer.jp/img/sample/mp4_h264_aac.mp4" controls="controls" width="640" height="480" muted preload="none">
-</video><br />
-</div>
-<br />
+	<br />
 
-<!--
-<div>webM(HTTP) 560x360 VP8 yuv420p 23.976fps<br />
-<video src="http://video.webmfiles.org/elephants-dream.webm" controls="controls" width="640" height="480" muted preload="none">
-</video><br />
-</div>
--->
+	<div>MP4(HTTP) 320x240 ビットレート1987kbps 30fps<br />
+		<span id="span_style2">
+			<video src="http://www.gomplayer.jp/img/sample/mp4_h264_aac.mp4" controls="controls" width="640" height="480" muted preload="none" />
+		</span>
+	</div>
 
-<hr>
+	<br />
 
-<div>
-<a href="./test/iframe.html">iframeサイトへのリンク</a><br />
-<a href="./test/streaming.html">ストリーミングサイトへのリンク</a>
-</div>
+	<!--
+	<div>webM(HTTP) 560x360 VP8 yuv420p 23.976fps<br />
+	<video src="http://video.webmfiles.org/elephants-dream.webm" controls="controls" width="640" height="480" muted preload="none">
+	</video><br />
+	</div>
+	-->
+
+	<hr>
+
+	<div>
+	<a href="./test/iframe.html">iframeサイトへのリンク</a><br />
+	<a href="./test/streaming.html">ストリーミングサイトへのリンク</a>
+	</div>
 
 </body>
 </html>
